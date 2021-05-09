@@ -3840,7 +3840,6 @@ static int drv_cmd_set_suspend_mode(struct hdd_adapter *adapter,
 		hdd_err("Range validation failed");
 		return -EINVAL;
 	}
-
 	hdd_debug("idle_monitor:%d", idle_monitor);
 	status = ucfg_pmo_tgt_psoc_send_idle_roam_suspend_mode(hdd_ctx->psoc,
 							       idle_monitor);
